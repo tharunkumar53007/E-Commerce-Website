@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial;
+    background-color: #f4f8fb;
+}
+header{
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header-content h1{
+    flex-grow: 1;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    
+}
+.nav-items li{
+    margin: 0px 15px;
+    transition: transform 0.15s ease;
+}
+
+
+.nav-items li a{
+    text-decoration: none;
+    margin:0;
+    padding: 5px 10px;
+    color: white;
+    transition: color 0.15s ease ;
+}
+.nav-items li:hover{
+    transform: scale(1.12);
+}
+.nav-items li a:hover{
+    color: rgb(90, 201, 90);
+
+}
+main{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    width: calc((100% / 3) - 40px);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.block:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.block img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.block-content{
+    font-family: Roboto, Arial;
+}
+
+.block-name{
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333;
+}
+.block-value{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+.block-content button{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:  #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.block-content button:hover{
+    background-color: #218838;
+}
+
+footer{
+    padding: 10px 0px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-family:Roboto, Arial;
+    font-weight: 500;
+}
