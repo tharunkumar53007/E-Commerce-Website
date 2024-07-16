@@ -115,14 +115,26 @@ footer{
     width: auto;
 }
 
-@media (max-width:760px){
+@media (max-width:768px){
     .block{
          width: calc((100% / 3) - 40px);
+    }
+
+    .header-content h1{
+        font-size: 25px;
+        white-space: nowrap;
+        
     }
 }
 
 @media (max-width:480px){
     .block{
         width: 100%;
+    }
+
+    .header-content h1{
+        font-size: 20px;
+        white-space: nowrap;
+        
     }
 }
